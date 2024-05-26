@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER USER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditId"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        android:hint="Id User"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditNama"
+        android:layout_below="@id/EditId"
+        android:hint="Nama"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditPassword"
+        android:layout_below="@id/EditNama"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/BtnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditPassword"
+        android:text="Simpan"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp">
+    </Button>
+    <Button
+        android:id="@+id/BtnPerbaharui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnSimpan"
+        android:text="Perbaharui"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp">
+    </Button>
+    <Button
+        android:id="@+id/BtnHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnPerbaharui"
+        android:text="Hapus"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp">
+    </Button>
+    <Button
+        android:id="@+id/BtnTampilkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnHapus"
+        android:text="Tampilkan"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp">
+    </Button>
+
+
+
+
+</RelativeLayout>
